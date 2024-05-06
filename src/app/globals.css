@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "../assets//fonts.css";
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,18 +18,45 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  section {
+    @apply min-h-[60.625rem] mx-60;
+  }
+  h1 {
+    @apply uppercase text-[4.25rem] font-monu leading-[110%];
+  }
+  h3 {
+    @apply text-[1.375rem] font-bold;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .gradient {
+    @apply bg-gradient-to-r from-blue-1 to-purple-1;
   }
+  .text-gradient {
+    @apply gradient bg-clip-text text-transparent;
+  }
+  .border-gradient {
+    @apply bg-origin-border;
+    border-image: linear-gradient(
+        to right,
+        theme("colors.blue.500"),
+        theme("colors.purple.500")
+      )
+      1;
+  }
+}
+
+/* :root {
+  --blue: #3d8bff;
+  --purple: #ab23ff;
+} */
+
+.font-monu {
+  font-family: "MonumentExtended" !important;
+}
+
+.font-sato {
+  font-family: "Satoshi" !important;
 }
