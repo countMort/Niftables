@@ -1,5 +1,5 @@
 import Image from "next/image"
-import creon_img from "@/assets/creon-pass-nft.svg"
+import creon_img from "@/assets/creon-pass-nft.png"
 import Gradient from "./Gradient"
 import styles from "../app.module.css"
 

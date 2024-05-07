@@ -1,5 +1,5 @@
 import Image from "next/image"
-import profiting_img from "@/assets/profiting-through.svg"
+import profiting_img from "@/assets/profiting-through.png"
 import Gradient from "./Gradient"
 
 export default function ProfitingThrough() {
@@ -11,7 +11,7 @@ export default function ProfitingThrough() {
       </h2>
       <div className="flex flex-wrap">
         <div className="relative w-[59.1875rem]">
-          <Image src={profiting_img} alt="profiting through" />
+          <Image className="w-full" src={profiting_img} alt="profiting through" />
           <Gradient />
         </div>
         <div className="flex-1 ml-10 px-[1.875rem] flex flex-col justify-center border-x border-gray-1">

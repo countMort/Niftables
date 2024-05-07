@@ -29,7 +29,7 @@ export interface ComingSoonCardProps
     ComingSoonData {}
 
 export interface RoadMapData {
-  image: string
+  image: StaticImageData
   title: string
   description: string
 }

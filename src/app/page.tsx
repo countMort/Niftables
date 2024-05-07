@@ -8,7 +8,7 @@ import ComingSoonSection from "./components/ComingSoonSection"
 import RoadMapSection from "./components/RoadMapSection"
 import Image from "next/image"
 import Gradient from "./components/Gradient"
-import road_map_img from "@/assets/roadmap.svg"
+import road_map_img from "@/assets/roadmap.png"
 import Footer from "./components/Footer"
 
 export default function Home() {
@@ -23,8 +23,8 @@ export default function Home() {
         <ComingSoonSection />
         <RoadMapSection />
       </main>
-      <div className="absolute bottom-0 z-[-1]">
-        <Image src={road_map_img} alt="road map" />
+      <div className="absolute bottom-0 z-[-1] w-full">
+        <Image src={road_map_img} alt="road map" className="w-full" />
         <Gradient />
         <Gradient className="from-black to-black/0" />
         <Gradient className="from-black/0 to-black" />
