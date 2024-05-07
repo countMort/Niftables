@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" style={{fontSize: '10.67px'}}>
-      <body className="text-white bg-black leading-[130%] font-sato">{children}</body>
+      <body className="text-white bg-black leading-[130%] font-sato text-[1.125rem]">{children}</body>
     </html>
   )
 }
