@@ -1,4 +1,4 @@
-import { RoadMapData } from "../app.types"
+import { RoadMapData } from "../../app.types"
 import road_map_1_img from "@/assets/road-map-1.png"
 import road_map_2_img from "@/assets/road-map-2.png"
 import road_map_3_img from "@/assets/road-map-3.png"

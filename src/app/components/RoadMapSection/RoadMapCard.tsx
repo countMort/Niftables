@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { RoadMapProps } from "../app.types"
-import Gradient from "./Gradient"
+import { RoadMapProps } from "../../app.types"
+import Gradient from "../Gradient"
 
 export function RoadMapCard({ title, description, image }: RoadMapProps) {
   return (

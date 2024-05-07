@@ -1,4 +1,4 @@
-import { ExpansionPanelProps } from "../app.types"
+import { ExpansionPanelProps } from "../../app.types"
 import Icon from "./Icon"
 import flesh_down_img from "@/assets/flesh_down.svg"
 import Image from "next/image"

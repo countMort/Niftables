@@ -1,5 +1,5 @@
 import { ComingSoonCard } from "./ComingSoonCard"
-import { ComingSoonData } from "../app.types"
+import { ComingSoonData } from "../../app.types"
 import token_img from "@/assets/coming-soon-token.png"
 import revenue_img from "@/assets/coming-soon-revenue.png"
 import launchpad_img from "@/assets/coming-soon-launchpad.png"

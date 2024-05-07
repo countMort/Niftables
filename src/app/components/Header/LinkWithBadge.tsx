@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { LinkWithBadgeProps } from "../app.types"
+import { LinkWithBadgeProps } from "../../app.types"
 
 export default function LinkWithBadge({
   children,

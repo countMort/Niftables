@@ -1,6 +1,6 @@
 import Image from "next/image"
-import Gradient from "./Gradient"
-import { ComingSoonCardProps } from "../app.types"
+import Gradient from "../Gradient"
+import { ComingSoonCardProps } from "../../app.types"
 
 export function ComingSoonCard({
   image,
