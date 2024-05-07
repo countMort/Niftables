@@ -7,7 +7,7 @@ import border_active_img from "@/assets/pent-border-active.svg"
 
 export default function ({ isActive = false, icon = "" }) {
   return (
-    <div className="relative">
+    <div className="relative shrink-0">
       <Image
         className="w-[6.25rem]"
         src={background_img}

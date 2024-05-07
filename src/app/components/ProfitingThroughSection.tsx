@@ -10,7 +10,7 @@ export default function ProfitingThrough() {
         AI Innovation & Decentralization
       </h2>
       <div className="flex flex-wrap">
-        <div className="relative w-[61.6875rem]">
+        <div className="relative w-[59.1875rem]">
           <Image src={profiting_img} alt="profiting through" />
           <Gradient />
         </div>

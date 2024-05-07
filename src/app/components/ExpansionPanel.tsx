@@ -1,6 +1,5 @@
 import { ExpansionPanelProps } from "../app.types"
 import Icon from "./Icon"
-import flesh_up_img from "@/assets/flesh_up.svg"
 import flesh_down_img from "@/assets/flesh_down.svg"
 import Image from "next/image"
 import { useRef } from "react"
@@ -15,17 +14,16 @@ export default function ExpansionPanel({
   const sectionContainer = useRef<HTMLElement>(null)
   return (
     <div>
-      <header className="flex pr-5">
+      <header className="flex pr-5 cursor-pointer" onClick={onClick}>
         <Icon icon={icon} isActive={isActive} />
-        <button
-          className="h3 ml-[1.875rem] flex items-center justify-between grow text-start"
-          onClick={() => onClick?.()}
-        >
+        <button className="h3 ml-[1.875rem] flex items-center justify-between grow text-start">
           {title}
           <Image
-            className="size-4"
-            src={isActive ? flesh_up_img : flesh_down_img}
-            alt="flesh up"
+            className={`size-4 transition-transform ${
+              isActive ? "rotate-180" : ""
+            } ml-5`}
+            src={flesh_down_img}
+            alt="flesh"
           ></Image>
         </button>
       </header>
@@ -38,7 +36,7 @@ export default function ExpansionPanel({
             : { height: "0px" }
         }
       >
-        {children}
+        <p>{children}</p>
       </section>
     </div>
   )

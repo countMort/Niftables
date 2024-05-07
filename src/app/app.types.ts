@@ -11,3 +11,17 @@ export interface ExpansionPanelProps extends DefaultComponentProps {
   isActive?: boolean
   onClick?: () => void
 }
+
+export interface GradientProps extends DefaultComponentProps {
+  className?: string
+}
+
+export interface ComingSoonData {
+  image: string
+  title: string
+  subtitle: string
+  description: string
+}
+export interface ComingSoonCardProps
+  extends DefaultComponentProps,
+    ComingSoonData {}
