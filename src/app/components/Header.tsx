@@ -5,21 +5,23 @@ import LinkWithBadge from "./LinkWithBadge"
 
 export default function Header() {
   return (
-    <div className="fixed z-50 flex bg-transparent px-4 py-2 justify-between w-full">
-      <Link href="/">
-        <Image src={logo_img} alt="CREON" width={140} height={39}></Image>
-      </Link>
-      <ul className="flex space-x-8 font-bold">
-        <LinkWithBadge badge="">Creon Pass</LinkWithBadge>
-        <LinkWithBadge>Token</LinkWithBadge>
-        <LinkWithBadge>Al Revenue.co</LinkWithBadge>
-        <LinkWithBadge>Al Launchpad</LinkWithBadge>
-        <li>
-          <a href="#" className="hover:text-gray-200">
-            Connect
-          </a>
-        </li>
-      </ul>
-    </div>
+    <header className="fixed z-50 px-[3.125rem] py-[1.875rem] w-full">
+      <nav className="flex justify-between">
+        <Link href="/">
+          <Image src={logo_img} alt="CREON" className="w-[8.75rem]" />
+        </Link>
+        <ul className="flex space-x-8 font-bold my-auto items-center">
+          <LinkWithBadge badge="">Creon Pass</LinkWithBadge>
+          <LinkWithBadge>Token</LinkWithBadge>
+          <LinkWithBadge>Al Revenue.co</LinkWithBadge>
+          <LinkWithBadge>Al Launchpad</LinkWithBadge>
+          <li>
+            <a href="#" className="hover:text-gray-200 py-[0.75rem] px-[1.875rem] block border rounded-md">
+              Connect
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   )
 }

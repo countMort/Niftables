@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
-        xs: "0.625rem",
+        xs: "0.625rem", // 10px
       },
       colors: {
         purple: {

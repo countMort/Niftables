@@ -1,7 +1,7 @@
 import { GradientProps } from "../app.types"
 
 export default function Gradient({
-  className = "blue-1 purple-1 mix-blend-soft-light",
+  className = "from-blue-1 to-purple-1 mix-blend-soft-light",
 }: GradientProps) {
   return (
     <div

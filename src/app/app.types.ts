@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image"
+
 export interface DefaultComponentProps {
   children?: React.ReactNode
 }
@@ -17,7 +19,7 @@ export interface GradientProps extends DefaultComponentProps {
 }
 
 export interface ComingSoonData {
-  image: string
+  image: StaticImageData
   title: string
   subtitle: string
   description: string
@@ -25,3 +27,11 @@ export interface ComingSoonData {
 export interface ComingSoonCardProps
   extends DefaultComponentProps,
     ComingSoonData {}
+
+export interface RoadMapData {
+  image: string
+  title: string
+  description: string
+}
+
+export interface RoadMapProps extends DefaultComponentProps, RoadMapData {}

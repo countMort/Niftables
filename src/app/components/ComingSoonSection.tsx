@@ -1,13 +1,13 @@
 import { ComingSoonCard } from "./ComingSoonCard"
 import { ComingSoonData } from "../app.types"
-import token_img from "@/assets/coming-soon-token.svg"
-import revenue_img from "@/assets/coming-soon-revenue.svg"
-import launchpad_img from "@/assets/coming-soon-launchpad.svg"
+import token_img from "@/assets/coming-soon-token.png"
+import revenue_img from "@/assets/coming-soon-revenue.png"
+import launchpad_img from "@/assets/coming-soon-launchpad.png"
 
 export default function ComingSoonSection() {
   return (
-    <section>
-      <div className="flex flex-wrap justify-between">
+    <section className="flex items-center">
+      <div className="flex flex-wrap justify-between grow">
         {comingSoonData.map((data, i) => (
           <ComingSoonCard
             key={"cm" + i}
