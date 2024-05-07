@@ -1,6 +1,7 @@
 import Image from "next/image"
-import creon_img from "@/assets/creon-pass-nft.png"
 import Gradient from "./Gradient"
+import creon_img from "@/assets/creon-pass-nft.png"
+import dark_shape from "@/assets/Dark shape.svg"
 import styles from "../app.module.css"
 
 export default function CreonPassSection() {
@@ -27,6 +28,11 @@ export default function CreonPassSection() {
       </div>
       <div className="relative size-[50.5rem] mr-[8.25rem]">
         <Image src={creon_img} alt="creon_img"></Image>
+        <Image
+          src={dark_shape}
+          alt="dark shape"
+          className="absolute top-0 bottom-0 left-0 right-0"
+        />
         <Gradient />
       </div>
     </section>
