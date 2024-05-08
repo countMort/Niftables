@@ -1,6 +1,7 @@
-import Image from "next/image"
-import profiting_img from "@/assets/profiting-through.png"
 import Gradient from "./Gradient"
+import LazyVideo from "./LazyVideo"
+import profiting_img from "@/assets/profiting-through.png"
+import profiting_video from "@/assets/creon-logo.mp4"
 
 export default function ProfitingThrough() {
   return (
@@ -10,14 +11,16 @@ export default function ProfitingThrough() {
         AI Innovation & Decentralization
       </h2>
       <div className="flex flex-wrap">
-        <div className="relative sm:w-[59.1875rem] w-1/2">
-          <Image className="w-full" src={profiting_img} alt="profiting through" />
+        <div className="relative sm:w-[59.1875rem] w-1/2 overflow-hidden">
+          <LazyVideo
+            image={profiting_img}
+            video={profiting_video}
+            alt="profiting through"
+          />
           <Gradient />
         </div>
         <div className="flex-1 ml-10 px-[1.875rem] flex flex-col justify-center border-x border-gray-1">
-          <h3>
-            The dynamic community driven business model of the future.
-          </h3>
+          <h3>The dynamic community driven business model of the future.</h3>
           <p className="mt-[1.75rem]">
             At Creon, we blend the power of AI tools with the dynamic crypto and
             NFT markets, utilizing an innovative business model to drive

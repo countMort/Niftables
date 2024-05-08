@@ -30,7 +30,7 @@ export default function LazyVideo({
       />
       <video
         ref={myRef}
-        className={`absolute top-0 w-full h-full ${!isStarted ? "z-[-2]" : ""}`}
+        className={`absolute top-0 w-full ${!isStarted ? "z-[-2]" : ""}`}
         src={video}
         loop
         muted
