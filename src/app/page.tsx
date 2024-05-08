@@ -13,14 +13,14 @@ import Footer from "./components/Footer"
 import { useEffect } from "react"
 
 export default function Home() {
-  // useEffect(() => {
-  //   const width = document.documentElement.scrollWidth
-  //   document.documentElement.style.fontSize = (width / 1920) * 16 + "px"
-  //   window.onresize = () => {
-  //     const width = document.documentElement.scrollWidth
-  //     document.documentElement.style.fontSize = (width / 1920) * 16 + "px"
-  //   }
-  // }, [])
+  useEffect(() => {
+    const width = document.documentElement.scrollWidth
+    document.documentElement.style.fontSize = (width / 1920) * 16 + "px"
+    window.onresize = () => {
+      const width = document.documentElement.scrollWidth
+      document.documentElement.style.fontSize = (width / 1920) * 16 + "px"
+    }
+  }, [])
   return (
     <>
       <Header />
