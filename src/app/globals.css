@@ -20,7 +20,7 @@
 
 @layer base {
   section {
-    @apply min-h-[60.625rem] mx-60;
+    @apply sm:min-h-[60.625rem] mx-10 sm:mx-60;
   }
   h1 {
     @apply uppercase text-[4.25rem] font-monu leading-[110%];

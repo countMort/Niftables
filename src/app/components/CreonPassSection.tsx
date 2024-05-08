@@ -9,7 +9,7 @@ export default function CreonPassSection() {
     <section
       className={`${styles.creon_pass} flex flex-wrap items-center mr-0`}
     >
-      <div className="w-[43.75rem]">
+      <div className="w-full sm:w-[43.75rem] max-sm:text-center">
         <h1>creon pass nft</h1>
         <hr className="border-gray-1 my-[1.875rem]" />
         <h3 className="text-gradient mb-10">
@@ -26,8 +26,8 @@ export default function CreonPassSection() {
           Buy Creon Pass
         </button>
       </div>
-      <div className="relative size-[50.5rem] mr-[8.25rem]">
-        <Image src={creon_img} alt="creon_img"></Image>
+      <div className="relative size-[50.5rem] mr-[8.25rem] max-sm:hidden">
+        <Image src={creon_img} alt="creon_img" />
         <Image
           src={dark_shape}
           alt="dark shape"

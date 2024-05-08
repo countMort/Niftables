@@ -10,12 +10,21 @@ import Image from "next/image"
 import Gradient from "./components/Gradient"
 import road_map_img from "@/assets/roadmap.png"
 import Footer from "./components/Footer"
+import { useEffect } from "react"
 
 export default function Home() {
+  // useEffect(() => {
+  //   const width = document.documentElement.scrollWidth
+  //   document.documentElement.style.fontSize = (width / 1920) * 16 + "px"
+  //   window.onresize = () => {
+  //     const width = document.documentElement.scrollWidth
+  //     document.documentElement.style.fontSize = (width / 1920) * 16 + "px"
+  //   }
+  // }, [])
   return (
     <>
       <Header />
-      <main>
+      <main className="max-sm:space-y-32">
         <HeadingSection />
         <CreonPassSection />
         <ProfitingThroughSection />

@@ -25,7 +25,11 @@ export default function Footer() {
       />
       <p className="ml-auto flex items-center">
         Powered by
-        <Image className="h-[1.125rem] w-[6.3125rem] ml-1.5" src={niftables_img} alt="niftables logo" />
+        <Image
+          className="h-[1.125rem] w-[6.3125rem] ml-1.5"
+          src={niftables_img}
+          alt="niftables logo"
+        />
       </p>
     </footer>
   )

@@ -6,7 +6,7 @@ export default function HeadingSection() {
     <section className="relative justify-center items-center mx-0">
       <Image className="w-full" src={title_img} alt="Creon" />
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-black via-blue-1 to-purple-1 mix-blend-soft-light" />
-      <div className="absolute top-[34.6875rem] left-60 right-60">
+      <div className="absolute top-56 sm:top-[34.6875rem] inset-x-10 sm:inset-x-60">
         <h1>
           THE WORLD'S FIRST
           <br />

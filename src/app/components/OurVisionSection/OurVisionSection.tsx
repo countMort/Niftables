@@ -5,21 +5,20 @@ import creon_stone_img from "@/assets/CREON 1.png"
 export default function OurVisionSection() {
   return (
     <section className="relative flex flex-wrap">
-      <h2 className="text-gradient w-[43.75rem]">
+      <h2 className="text-gradient w-1/2 sm:w-[43.75rem] max-sm:my-auto">
         <span className="text-white">
           Our vision is to support the innovation of AI blockchain projects
         </span>{" "}
         while prioritizing communities and democratizing profits
       </h2>
-      <div className="mt-[7.1875rem] ml-auto w-[34.5rem]">
+      <div className="sm:mt-[7.1875rem] ml-auto sm:w-[34.5rem] w-1/2">
         <ExpansionPanelGroup />
       </div>
-      <div className="absolute bottom-0 left-[7.4375rem] w-[52.25rem] z-[-1]">
-        <div className="relative">
-          <Image src={creon_stone_img} alt="Creon Stone" />
-          <div className="absolute bg-gradient-to-t bottom-0 top-[27.375rem] left-0 right-0 from-black to-black/0"></div>
-        </div>
-      </div>
+      <Image
+        src={creon_stone_img}
+        alt="Creon Stone"
+        className="absolute bottom-0 sm:left-[7.4375rem] left-0 w-full sm:w-[52.25rem] z-[-1]"
+      />
     </section>
   )
 }
