@@ -14,7 +14,6 @@ export default function LazyVideo({
     myRef.current?.load()
     let interval = setInterval(() => {
       const ready = myRef.current?.readyState === 4
-      console.log(myRef.current?.readyState)
       if (ready) {
         clearInterval(interval)
         myRef.current?.play()
