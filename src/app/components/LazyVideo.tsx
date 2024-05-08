@@ -1,12 +1,17 @@
 import Image from "next/image"
-import title_img from "@/assets/main-video-gradient 1.png"
-import main_video from "@/assets/main-background-video.mp4"
 import { ReactEventHandler, useEffect, useRef, useState } from "react"
+import { LazyVideoProps } from "../app.types"
 
-export default function LazyVideo() {
+export default function LazyVideo({
+  video,
+  image,
+  alt,
+  children,
+}: LazyVideoProps) {
   const [isStarted, setIsStarted] = useState(false)
   const myRef = useRef<HTMLVideoElement>(null)
   useEffect(() => {
+    myRef.current?.load()
     myRef.current?.play()
   }, [])
   const checkState: ReactEventHandler<HTMLVideoElement> = (e) => {
@@ -18,20 +23,21 @@ export default function LazyVideo() {
   return (
     <>
       <Image
-        className={`w-full ${isStarted ? "hidden" : ""}`}
-        src={title_img}
-        alt="Creon"
+        className={`w-full ${isStarted ? "invisible" : ""}`}
+        src={image}
+        alt={alt}
       />
       <video
         ref={myRef}
-        className={`w-full ${!isStarted ? "hidden" : ""}`}
-        src={main_video}
+        className={`absolute top-0 w-full h-full ${!isStarted ? "z-[-2]" : ""}`}
+        src={video}
         loop
         muted
         onLoadedMetadata={checkState}
+        onLoadedData={checkState}
         onPlay={checkState}
       />
-      <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-black via-blue-1 to-purple-1 mix-blend-soft-light" />
+      {children}
     </>
   )
 }

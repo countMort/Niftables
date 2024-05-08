@@ -35,3 +35,9 @@ export interface RoadMapData {
 }
 
 export interface RoadMapProps extends DefaultComponentProps, RoadMapData {}
+
+export interface LazyVideoProps extends DefaultComponentProps {
+  video: string
+  image: StaticImageData | string
+  alt: string
+}

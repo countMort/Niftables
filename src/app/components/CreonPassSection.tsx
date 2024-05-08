@@ -1,8 +1,10 @@
 import Image from "next/image"
 import Gradient from "./Gradient"
-import creon_img from "@/assets/creon-pass-nft.png"
 import dark_shape from "@/assets/Dark shape.svg"
 import styles from "../app.module.css"
+import LazyVideo from "./LazyVideo"
+import creon_img from "@/assets/creon-pass-nft.png"
+import nft_video from "@/assets/nft-video.mp4"
 
 export default function CreonPassSection() {
   return (
@@ -27,7 +29,7 @@ export default function CreonPassSection() {
         </button>
       </div>
       <div className="relative size-[50.5rem] mr-[8.25rem] max-sm:hidden">
-        <Image src={creon_img} alt="creon_img" />
+        <LazyVideo image={creon_img} video={nft_video} alt="NFT image" />
         <Image
           src={dark_shape}
           alt="dark shape"
