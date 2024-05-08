@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.mp4$/,
+      type: "asset",
+      generator: {
+        filename: "static/chunks/[path][name].[hash][ext]",
+      },
+    })
 
-export default nextConfig;
+    return config
+  },
+}
+
+export default nextConfig
