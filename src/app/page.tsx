@@ -6,11 +6,9 @@ import ProfitingThroughSection from "./components/ProfitingThroughSection"
 import OurVisionSection from "./components/OurVisionSection/OurVisionSection"
 import ComingSoonSection from "./components/ComingSoonSection/ComingSoonSection"
 import RoadMapSection from "./components/RoadMapSection/RoadMapSection"
-import Image from "next/image"
-import Gradient from "./components/Gradient"
-import road_map_img from "@/assets/roadmap.png"
 import Footer from "./components/Footer"
 import { useEffect } from "react"
+import RoadMapImage from "./components/RoadMapSection/RoadMapImage"
 
 export default function Home() {
   useEffect(() => {
@@ -36,12 +34,7 @@ export default function Home() {
         <ComingSoonSection />
         <RoadMapSection />
       </main>
-      <div className="absolute bottom-0 z-[-1] w-full">
-        <Image src={road_map_img} alt="road map" className="w-full" />
-        <Gradient />
-        <Gradient className="from-black to-black/0" />
-        <Gradient className="from-black/0 to-black" />
-      </div>
+      <RoadMapImage />
       <Footer />
     </>
   )
