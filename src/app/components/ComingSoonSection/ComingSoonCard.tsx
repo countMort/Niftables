@@ -15,7 +15,7 @@ export function ComingSoonCard({
       </span>
       <header className="ml-[1.875rem]">
         <h2 className="mb-[0.9375rem]">{title}</h2>
-        <h3 className="text-gradient h-[2.15em]">{subtitle}</h3>
+        <h3 className="text-gradient h-[2.6em]">{subtitle}</h3>
       </header>
       <div className="relative w-full mt-[1.875rem] mb-7 rounded-e-lg overflow-hidden">
         <Image src={image} alt="token" />
