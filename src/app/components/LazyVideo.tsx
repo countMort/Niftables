@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ReactEventHandler, useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { LazyVideoProps } from "../app.types"
 
 export default function LazyVideo({
@@ -12,14 +12,16 @@ export default function LazyVideo({
   const myRef = useRef<HTMLVideoElement>(null)
   useEffect(() => {
     myRef.current?.load()
-    myRef.current?.play()
+    let interval = setInterval(() => {
+      const ready = myRef.current?.readyState === 4
+      console.log(myRef.current?.readyState)
+      if (ready) {
+        clearInterval(interval)
+        myRef.current?.play()
+        setIsStarted(true)
+      }
+    }, 500)
   }, [])
-  const checkState: ReactEventHandler<HTMLVideoElement> = (e) => {
-    if (isStarted) return
-    const video = e.target
-    // @ts-ignore
-    if (video.readyState === 4) setIsStarted(true)
-  }
   return (
     <>
       <Image
@@ -33,9 +35,6 @@ export default function LazyVideo({
         src={video}
         loop
         muted
-        onLoadedMetadata={checkState}
-        onLoadedData={checkState}
-        onPlay={checkState}
       />
       {children}
     </>
