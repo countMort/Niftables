@@ -6,7 +6,7 @@ export default function OurVisionSection() {
   return (
     <section className="relative flex flex-wrap">
       <h2 className="text-gradient w-1/2 sm:w-[43.75rem] max-sm:my-auto">
-        <span className="text-white">
+        <span className="wk-text-white">
           Our vision is to support the innovation of AI blockchain projects
         </span>{" "}
         while prioritizing communities and democratizing profits
