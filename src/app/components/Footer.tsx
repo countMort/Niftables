@@ -6,10 +6,10 @@ import niftables_img from "@/assets/Niftables.svg"
 
 export default function Footer() {
   return (
-    <footer className="px-60 pt-[0.9375rem] pb-[2.1875rem] text-base flex">
+    <footer className="px-10 sm:px-60 pt-[0.9375rem] pb-[2.1875rem] text-base flex">
       © Creon 2023. All rights reserved.
       <Image
-        className="size-[2.125rem] ml-[5.625rem]"
+        className="size-[2.125rem] ml-auto sm:ml-[5.625rem]"
         src={telegram_img}
         alt="telegram"
       />

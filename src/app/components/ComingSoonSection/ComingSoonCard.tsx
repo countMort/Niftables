@@ -9,7 +9,7 @@ export function ComingSoonCard({
   description,
 }: ComingSoonCardProps) {
   return (
-    <article className="relative sm:w-[28.3125rem] w-[37rem] py-[1.875rem] pr-[1.875rem] rounded-md bg-gray-1/60">
+    <article className="relative sm:w-[28.3125rem] w-[80%] py-[1.875rem] pr-[1.875rem] rounded-md bg-gray-1/60">
       <span className="absolute top-0 right-[1.875rem] -translate-y-1/2 py-[0.1875rem] px-1.5 rounded-full text-black font-bold bg-white text-xs leading-[110%]">
         Coming Soon
       </span>

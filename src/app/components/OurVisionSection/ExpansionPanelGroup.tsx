@@ -13,7 +13,7 @@ export default function ExpansionPanelGroup() {
   }
 
   return (
-    <div className="space-y-[1.875rem]">
+    <div className="space-y-4 sm:space-y-[1.875rem]">
       {ourVisionPanels.map((panel, index) => (
         <ExpansionPanel
           key={"p" + index}

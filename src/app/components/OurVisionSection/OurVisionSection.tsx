@@ -17,7 +17,7 @@ export default function OurVisionSection() {
       <Image
         src={creon_stone_img}
         alt="Creon Stone"
-        className="absolute bottom-0 sm:left-[7.4375rem] left-0 w-full sm:w-[52.25rem] z-[-1]"
+        className="absolute sm:bottom-0 bottom-1/2 max-sm:translate-y-1/2 sm:left-[7.4375rem] left-0 w-full sm:w-[52.25rem] z-[-1]"
       />
     </section>
   )

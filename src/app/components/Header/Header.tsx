@@ -5,12 +5,12 @@ import LinkWithBadge from "./LinkWithBadge"
 
 export default function Header() {
   return (
-    <header className="fixed z-50 px-[3.125rem] py-[1.875rem] w-full">
+    <header className="fixed z-50 px-5 sm:px-[3.125rem] py-[1.875rem] w-full">
       <nav className="flex justify-between">
         <Link href="/">
           <Image src={logo_img} alt="CREON" className="w-[8.75rem]" />
         </Link>
-        <ul className="flex space-x-8 font-bold my-auto items-center">
+        <ul className="flex space-x-4 sm:space-x-8 font-bold my-auto items-center">
           <LinkWithBadge badge="">Creon Pass</LinkWithBadge>
           <LinkWithBadge>Token</LinkWithBadge>
           <LinkWithBadge>Al Revenue.co</LinkWithBadge>
